@@ -1,23 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bajason Bazar</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap">
+    </head>
 <body>
     <header>
-        <nav class="navegacion">
+        <input type="checkbox" id="check" class="checkbox">
+        <label for="check" class="checkbtn">
+            &#9776; <!-- Icono de barra (tres líneas) -->
+        </label>
+        <a href="index.html" class="enlace">
+            <img src="img/logo.png" alt="BajasonBazar" class="logo">
+            </a>
+        <nav>
             <ul>
-                <a href="index.html"><li>INICIO</li></a>
-                <a href="tienda.html"><li>TIENDA</li></a>
-                <a href="quienessomos.html"><li>QUIÉNES SOMOS</li></a>
-                <a href="contacto.html"><li>CONTACTO</li></a>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="quienessomos.html">Quienes somos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
+        
     </header>
-
+    
     <script src="script.js"></script>
 
 
@@ -42,6 +51,12 @@
         <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
     </div>
     
+    <div class="logo-large">
+        <a href="index.html" class="">
+            <img src="img/logo.png" alt="BajasonBazar" class="logo-l">
+            </a>
+
+    </div>
 
     <section id="inicio" class="titulo1">
         <div class="hero-content">
@@ -58,24 +73,24 @@
                 <div class="img-container">
                     <img src="img/BANCAEJERCICIO1.jpg" alt="Banca para ejercicio">
                 </div>
-                <h2>Banca para ejercicio</h2>
-                <h2>$200</h2>
+                <p>Banca para ejercicio</p>
+                <p>$200</p>
                 <button class="btn-agregar-carrito">Agregar al Carrito</button>
             </div></a>
             <a href="tienda.html"><div class="articulo">           
                 <div class="img-container">
                     <img src="img/BANCOLUJO.webp" alt="Bancos">
                 </div>
-                <h2>Bancos</h2>
-                <h2>$200</h2>
+                <p>Bancos</p>
+                <p>$200</p>
                 <button class="btn-agregar-carrito">Agregar al Carrito</button>
             </div></a>
             <a href="tienda.html"><div class="articulo">           
                 <div class="img-container">
                     <img src="img/BICICLETA.jpg" alt="Bicicleta Stars Wars">
                 </div>
-                <h2>Bicicleta Stars Wars</h2>
-                <h2>$200</h2>
+                <p>Bicicleta Stars Wars</p>
+                <p>$200</p>
                 <button class="btn-agregar-carrito">Agregar al Carrito</button>
             </div></a>
 
@@ -83,14 +98,16 @@
                 <div class="img-container">
                     <img src="img/CAJONERA2.jpg" alt="Cajonera">
                 </div>
-                <h2>Cajonera</h2>
-                <h2>$200</h2>
+                <p>Cajonera</p>
+                <p>$200</p>
                 <button class="btn-agregar-carrito">Agregar al Carrito</button>
             </div></a>
     
   
         </div>
-        <a href="tienda.html"><p>Ver más...</p></a>
+        <a href="tienda.html"><p class="titulo">Ver más...</p></a>
+
+
     </section>
 
 
