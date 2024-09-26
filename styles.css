@@ -378,6 +378,7 @@ button:hover {
 @media screen and (max-width: 1200px) {
 
     .logo-large img {
+        display: block;
     width:300px;
     }
     
@@ -403,7 +404,7 @@ button:hover {
     }
     
     .carousel-item {
-        min-width: 100%; /* Cada item del carrusel ocupará el 100% del ancho del contenedor */
+        min-width: 80%; /* Cada item del carrusel ocupará el 100% del ancho del contenedor */
         height: auto; /* Ajusta automáticamente la altura */
         padding: 50px;
         
@@ -533,6 +534,11 @@ button:hover {
         max-height: 200px;
     }
 
-
+    .carousel-container{
+        display: none;
     }
+
+
+
+}
 
