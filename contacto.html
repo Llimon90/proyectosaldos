@@ -8,18 +8,29 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap">
 </head>
 <body>
+
     <header>
-        <nav class="navegacion">
+        <input type="checkbox" id="check" class="checkbox">
+        <label for="check" class="checkbtn">
+            &#9776; <!-- Icono de barra (tres líneas) -->
+        </label>
+        <a href="index.html" class="enlace">
+            <img src="img/logo.png" alt="BajasonBazar" class="logo">
+            </a>
+        <nav>
             <ul>
-                <a href="index.html"><li>INICIO</li></a>
-                <a href="tienda.html"><li>TIENDA</li></a>
-                <a href="quienessomos.html"><li>QUIÉNES SOMOS</li></a>
-                <a href="contacto.html"><li>CONTACTO</li></a>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="quienessomos.html">Quienes somos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
+        
     </header>
+    
+    
     <div class="contacto1">
-        <p class="titulo">ESCRÍBENOS</p>
+        <p class="titulo1">ESCRÍBENOS</p>
         <form method="post">
             <P>Nombre:</P>
             <input type="text" id="nombre" name="nombre" required>
@@ -46,6 +57,5 @@
             <p>&copy; 2024 Bajason Bazar. Todos los derechos reservados.</p>
         </div>
     </footer>
-   
 </body>
 </html>
