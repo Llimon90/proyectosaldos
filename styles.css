@@ -39,7 +39,7 @@ header{
 }
 nav ul {
     list-style: none;
-    padding: 30px;
+   /* padding: 30px;*/
     display: flex;
     justify-content: right;
     
@@ -48,7 +48,7 @@ nav ul {
 nav ul a {
     text-decoration: none;
     color: white;
-    padding: 15px 20px;
+   /* padding: 15px 20px;*/
     font-size: 18px;
     font-size: x-large;
 }
@@ -67,7 +67,7 @@ nav ul a:hover {
 }
 
 .enlace{
-    padding: 20px ;
+   /* padding: 20px ;*/
     position: absolute;
     
     
@@ -85,7 +85,7 @@ nav ul a:hover {
     max-width: 100%; /* Ajusta esto al ancho que desees */
     margin: auto;
     overflow: hidden;
-    padding: 100px;
+   /* padding: 100px;*/
 }
 
 .carousel {
@@ -119,7 +119,7 @@ nav ul a:hover {
     color: white;
     border: none;
     border-radius: 50px;
-    padding: 10px;
+   /* padding: 10px;*/
     cursor: pointer;
     z-index: 1;
 }
@@ -135,7 +135,7 @@ nav ul a:hover {
 .logo-large{
     display: flex;
     justify-content: center;
-    padding: 200px;
+   /* padding: 200px;*/
 }
 
 .titulo1  {
