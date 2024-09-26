@@ -27,8 +27,6 @@ body {
     font-family: 'Oswald', sans-serif;
     color: #333;
     margin: 0;
-    width:100%;
-    overflow-x:hidden;
     
 }
 
@@ -39,7 +37,7 @@ header{
 }
 nav ul {
     list-style: none;
-   /* padding: 30px;*/
+    padding: 30px;
     display: flex;
     justify-content: right;
     
@@ -48,7 +46,7 @@ nav ul {
 nav ul a {
     text-decoration: none;
     color: white;
-   /* padding: 15px 20px;*/
+    padding: 15px 20px;
     font-size: 18px;
     font-size: x-large;
 }
@@ -67,7 +65,7 @@ nav ul a:hover {
 }
 
 .enlace{
-   /* padding: 20px ;*/
+    padding: 20px ;
     position: absolute;
     
     
@@ -82,10 +80,10 @@ nav ul a:hover {
 /*estilos carrousel*/
 .carousel-container {
     position: relative;
-    max-width: 100%; /* Ajusta esto al ancho que desees */
+    max-width: 2000px; /* Ajusta esto al ancho que desees */
     margin: auto;
     overflow: hidden;
-   /* padding: 100px;*/
+    padding: 100px;
 }
 
 .carousel {
@@ -119,7 +117,7 @@ nav ul a:hover {
     color: white;
     border: none;
     border-radius: 50px;
-   /* padding: 10px;*/
+    padding: 10px;
     cursor: pointer;
     z-index: 1;
 }
@@ -135,7 +133,7 @@ nav ul a:hover {
 .logo-large{
     display: flex;
     justify-content: center;
-   /* padding: 200px;*/
+    padding: 200px;
 }
 
 .titulo1  {
@@ -159,7 +157,7 @@ nav ul a:hover {
 .titulo2 {
     width: 50%;
     margin: 50px auto; 
-   /* padding: 20px;*/
+    padding: 20px;
     border-radius: 10px;
     margin-top: 200px ;
     
@@ -193,7 +191,7 @@ nav ul a:hover {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
-    /*padding: 50px;*/
+    padding: 50px;
     gap: 50px;
     position: relative;
 }
@@ -212,7 +210,7 @@ nav ul a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    /*padding: 20px;*/
+    padding: 20px;
     box-sizing: border-box;
 }
 
@@ -257,7 +255,7 @@ nav ul a:hover {
 footer {
     background-color: #21261a;
     color: #d3cece;
-   /* padding: 20px;*/
+    padding: 20px;
     text-align: center;
 }
 
@@ -390,12 +388,12 @@ button:hover {
     
     .carousel-container {
         margin-top: 60px; /* Ajusta este valor según sea necesario */
-        
+        padding-top: 20px; /* O puedes usar padding si prefieres */
         overflow: hidden; /* Evita que las imágenes salgan del contenedor */
         
     }
     .carousel-container {
-        overflow: block; /* Oculta cualquier contenido que sobresalga del contenedor */
+        overflow: hidden; /* Oculta cualquier contenido que sobresalga del contenedor */
         position: relative; /* Posiciona el contenedor para los controles */
         max-width: 100%; /* Asegúrate de que el ancho no sobrepase el 100% */
     }
@@ -408,7 +406,7 @@ button:hover {
     .carousel-item {
         min-width: 80%; /* Cada item del carrusel ocupará el 100% del ancho del contenedor */
         height: auto; /* Ajusta automáticamente la altura */
-        
+        padding: 50px;
         
     }
     
@@ -437,7 +435,7 @@ button:hover {
         left: 50%;
         transform: translateX(-50%);
         z-index: 1001;
-        /*padding: 10px;*/
+        padding: 10px;
         font-size: 30px; /* Ajusta el tamaño del ícono */
         transition: all 0.5s ease;
         cursor: pointer;
@@ -449,7 +447,7 @@ button:hover {
         color: white;
         
         visibility: hidden;
-        opacity: 10;
+        opacity: 0;
         transform: translateY(-100%);
         
         position: fixed;
@@ -484,7 +482,7 @@ button:hover {
     /* Al activar el checkbox, el menú aparece */
     #check:checked ~ nav ul { 
         visibility: visible;
-        opacity: 5;
+        opacity: 1;
         transform: translateY(0);
     }
 
