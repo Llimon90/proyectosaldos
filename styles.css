@@ -159,7 +159,7 @@ nav ul a:hover {
 .titulo2 {
     width: 50%;
     margin: 50px auto; 
-    padding: 20px;
+   /* padding: 20px;*/
     border-radius: 10px;
     margin-top: 200px ;
     
@@ -193,7 +193,7 @@ nav ul a:hover {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
-    padding: 50px;
+    /*padding: 50px;*/
     gap: 50px;
     position: relative;
 }
@@ -212,7 +212,7 @@ nav ul a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    /*padding: 20px;*/
     box-sizing: border-box;
 }
 
@@ -257,7 +257,7 @@ nav ul a:hover {
 footer {
     background-color: #21261a;
     color: #d3cece;
-    padding: 20px;
+   /* padding: 20px;*/
     text-align: center;
 }
 
@@ -390,12 +390,12 @@ button:hover {
     
     .carousel-container {
         margin-top: 60px; /* Ajusta este valor según sea necesario */
-        padding-top: 20px; /* O puedes usar padding si prefieres */
+        
         overflow: hidden; /* Evita que las imágenes salgan del contenedor */
         
     }
     .carousel-container {
-        overflow: hidden; /* Oculta cualquier contenido que sobresalga del contenedor */
+        overflow: block; /* Oculta cualquier contenido que sobresalga del contenedor */
         position: relative; /* Posiciona el contenedor para los controles */
         max-width: 100%; /* Asegúrate de que el ancho no sobrepase el 100% */
     }
@@ -408,7 +408,7 @@ button:hover {
     .carousel-item {
         min-width: 80%; /* Cada item del carrusel ocupará el 100% del ancho del contenedor */
         height: auto; /* Ajusta automáticamente la altura */
-        padding: 50px;
+        
         
     }
     
@@ -437,7 +437,7 @@ button:hover {
         left: 50%;
         transform: translateX(-50%);
         z-index: 1001;
-        padding: 10px;
+        /*padding: 10px;*/
         font-size: 30px; /* Ajusta el tamaño del ícono */
         transition: all 0.5s ease;
         cursor: pointer;
@@ -449,7 +449,7 @@ button:hover {
         color: white;
         
         visibility: hidden;
-        opacity: 0;
+        opacity: 10;
         transform: translateY(-100%);
         
         position: fixed;
