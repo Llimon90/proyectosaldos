@@ -6,9 +6,10 @@
     margin: 0;
     list-style: none;
     padding: 0;
+    box-sizing: border-box;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
-  
+}
 
 a {
     color: inherit;
@@ -19,34 +20,70 @@ a:hover {
     color: rgb(201, 201, 214);
 }
 
+
+
 body {
-    background-color: 
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-color: #f4f4f9;
+    font-family: 'Oswald', sans-serif;
+    color: #333;
+    margin: 0;
+    
 }
 
-nav {
+/*ESTILOS NAV*/
+
+header{
+    background-color: #0e0e0e;
+}
+nav ul {
+    list-style: none;
+    padding: 30px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #21261a;
-    color: rgb(255, 255, 255);
-    font-size: xx-large;
+    justify-content: right;
+    
 }
 
-nav ul li {
-    display: inline-block;
-    margin: 0 20px;
-    padding: 20px;
+nav ul a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+    font-size: 18px;
+    font-size: x-large;
 }
 
+nav ul a:hover {
+    background-color: #e0b60f;
+    color: #0e0e0e;
+    border-radius: 5px;
+
+
+    
+}
+
+.checkbtn {
+    display: none;
+}
+
+.enlace{
+    padding: 20px ;
+    position: absolute;
+    
+    
+}
+    
+.logo{
+    height:96px;  
+    margin-top: -13px;
+   
+}
+
+/*estilos carrousel*/
 .carousel-container {
     position: relative;
-    max-width: 1000px; /* Ajusta esto al ancho que desees */
+    max-width: 2000px; /* Ajusta esto al ancho que desees */
     margin: auto;
     overflow: hidden;
-    padding: 50px;
+    padding: 100px;
 }
 
 .carousel {
@@ -55,7 +92,7 @@ nav ul li {
 }
 
 .carousel-item {
-    min-width: 100%;
+    min-width: 80%;
     transition: transform 0.5s ease-in-out;
     display: flex;
     justify-content: center;
@@ -63,9 +100,13 @@ nav ul li {
 }
 
 .carousel-item img {
-    width: 100%;  /* Hace que la imagen ocupe el 100% del contenedor */
-    height: 500px; /* Ajusta esto a la altura deseada */
-    object-fit: cover; /* Cubre el área del contenedor sin distorsionar la imagen */
+    width: 80%;  /* Hace que la imagen ocupe el 100% del contenedor */
+    height: 600px; /* Ajusta esto a la altura deseada */
+    object-fit:inherit;
+ 
+    
+
+
 }
 
 .carousel-control {
@@ -75,6 +116,7 @@ nav ul li {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
+    border-radius: 50px;
     padding: 10px;
     cursor: pointer;
     z-index: 1;
@@ -88,56 +130,37 @@ nav ul li {
     right: 10px;
 }
 
-
-.titulo1 p {
-    font-size: 90px;
-    color: rgb(82, 66, 66);
-    text-align: center;
-    margin-top: 100px;
-}
-
-
-/* ESTILOS DE QUIENES SOMOS*/
-
-body {
-    background-color: #f4f4f9;
-    font-family: 'Oswald', sans-serif;
-    color: #333;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: #2b6382;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-header .navegacion ul {
-    list-style: none;
-    padding: 0;
+.logo-large{
     display: flex;
     justify-content: center;
+    padding: 200px;
 }
 
-header .navegacion ul a {
-    text-decoration: none;
-    color: white;
-    padding: 15px 20px;
-    font-size: 18px;
+.titulo1  {
+    font-size: 70px;
+    color: rgb(82, 66, 66);
+    text-align: center;
+    margin-top: 250px;
 }
 
-header .navegacion ul a:hover {
-    background-color: #1e4a61;
-    border-radius: 5px;
+
+.titulo {
+    
+    font-size: 70px;
+    color: rgb(82, 66, 66);
+    text-align: center;
+    margin-top: 200px;
 }
+
+
 
 .titulo2 {
     width: 50%;
-    margin: 50px auto;
+    margin: 50px auto; 
     padding: 20px;
     border-radius: 10px;
+    margin-top: 200px ;
+    
 }
 
 .titulo2:nth-child(odd) {
@@ -162,13 +185,7 @@ header .navegacion ul a:hover {
     color: #333;
 }
 
-footer {
-    background-color: #2b6382;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    margin-top: 50px;
-}
+
 
 .articulos {
     display: grid;
@@ -232,29 +249,8 @@ footer {
     align-items: center;
 }
 
-.estrella {
-    color: gold; 
-    font-size: 30px; 
-}
 
-.info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 50px;
-    height: 500px;
-    background-color: #8eb4b1;
-    color: rgb(15, 21, 15);
-    font-size: 30px;
-}
 
-.info p {
-    color: rgb(27, 47, 27);
-    font-size: 50px;
-    width: 80%;
-    text-align: center;
-}
 
 footer {
     background-color: #21261a;
@@ -277,7 +273,10 @@ footer {
     width: 30px;
 }
 
+/*ESTILOS DE FORMULARIO DE CONTACTO*/
 .contacto1 {
+    min-height: calc(100vh - 20px); /* Ajusta según la altura de tu footer */
+
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -286,7 +285,7 @@ footer {
 
 form {
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 255, 0); 
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0);
     margin: 20px auto;
     max-width: 400px;
 }
@@ -314,7 +313,7 @@ input:hover, textarea:hover {
 
 input:focus, textarea:focus {
     border-color: #3498db;
-    box-shadow: 0 0 10px rgba(0, 0, 255, 0.5); 
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.5);
 }
 
 button {
@@ -330,7 +329,9 @@ button {
 button:hover {
     background-color: #2980b9;
 }
-
+.checkbox{
+    visibility: hidden;
+}
 /* Estilos adicionales */
 .banner {
     background-image: url('banner.jpg');
@@ -364,7 +365,140 @@ button:hover {
     background-color: #ff4500;
 }
 
+
+
+/* Ocultar visualmente la caja del checkbox pero mantener la funcionalidad */
+.checkbox {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+
+/*ESTILOS RESPONSIVE*/
+@media screen and (max-width: 1200px) {
+
+    .logo-large img {
+    width:300px;
+    }
+    
+    .enlace{
+        display: none;
+    }
+    
+    .carousel-container {
+        margin-top: 60px; /* Ajusta este valor según sea necesario */
+        padding-top: 20px; /* O puedes usar padding si prefieres */
+        overflow: hidden; /* Evita que las imágenes salgan del contenedor */
+        
+    }
+    .carousel-container {
+        overflow: hidden; /* Oculta cualquier contenido que sobresalga del contenedor */
+        position: relative; /* Posiciona el contenedor para los controles */
+        max-width: 100%; /* Asegúrate de que el ancho no sobrepase el 100% */
+    }
+    
+    .carousel {
+        display: flex; /* Usar flex para alinear los items en una línea */
+        transition: transform 0.5s ease; /* Añade transición para un efecto suave al deslizar */
+    }
+    
+    .carousel-item {
+        min-width: 100%; /* Cada item del carrusel ocupará el 100% del ancho del contenedor */
+        height: auto; /* Ajusta automáticamente la altura */
+        padding: 50px;
+        
+    }
+    
+    .carousel-item img {
+        width: 100%; /* Ajusta el ancho de la imagen al 100% del item */
+        height: auto; /* Mantiene la relación de aspecto */
+        max-height: 500px; /* Ajusta según necesites */
+        object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsionarse */
+       
+    }
+    
+    .carousel-control {
+        position: absolute; /* Posiciona los controles en relación al contenedor */
+        top: 50%; /* Centra verticalmente */
+        transform: translateY(-50%); /* Ajusta la posición vertical */
+        background-color: rgba(255, 255, 255, 0.5); /* Fondo semi-transparente para mejor visibilidad */
+        border: none; /* Sin borde */
+        cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    }
+    
+    /* Estilos para el botón de check (icono de barras) */
+    .checkbtn {
+        display: block;
+        position: fixed;
+        top: 5px; /* Justo encima del primer elemento (Inicio) */
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1001;
+        padding: 10px;
+        font-size: 30px; /* Ajusta el tamaño del ícono */
+        transition: all 0.5s ease;
+        cursor: pointer;
+        color: rgb(129, 123, 123); /* Color de las tres líneas */
+    }
+
+    nav ul {
+        background-color: black;
+        color: white;
+        
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(-100%);
+        
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        
+        text-align: center;
+        transition: all 0.5s ease;
+        z-index: 1000;
+
+        /* Añadir flexbox para centrar verticalmente */
+        display: flex;
+        flex-direction: column; /* Cambiar a columna */
+        justify-content: center; /* Centrar verticalmente */
+        align-items: center; /* Centrar horizontalmente */
+    }
+
+    nav ul li {
+        display: block;
+        line-height: 50px;
+        margin: 20px 0;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+    }
+
+    /* Al activar el checkbox, el menú aparece */
+    #check:checked ~ nav ul { 
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+
+    #check:checked ~ .checkbtn  {
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+  
+}
+
+
+/*TERMINA HEADER NAV*/
+
 @media (max-width: 992px) {
+
     .articulos {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
@@ -376,17 +510,12 @@ button:hover {
         grid-template-columns: 1fr;
         gap: 15px;
     }
-    
+
     .titulo1 p {
         font-size: 60px;
         margin-top: 50px;
     }
-    
-    nav ul li {
-        margin: 0 10px;
-        padding: 10px;
-        font-size: large;
-    }
+
 }
 
 @media (max-width: 576px) {
@@ -404,14 +533,6 @@ button:hover {
         max-height: 200px;
     }
 
-    .titulo1 p {
-        font-size: 40px;
-        margin-top: 30px;
+
     }
 
-    nav ul li {
-        margin: 0 5px;
-        padding: 5px;
-        font-size: medium;
-    }
-}
