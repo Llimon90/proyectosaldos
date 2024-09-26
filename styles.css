@@ -82,7 +82,7 @@ nav ul a:hover {
 /*estilos carrousel*/
 .carousel-container {
     position: relative;
-    max-width: 2000px; /* Ajusta esto al ancho que desees */
+    max-width: 100%; /* Ajusta esto al ancho que desees */
     margin: auto;
     overflow: hidden;
     padding: 100px;
